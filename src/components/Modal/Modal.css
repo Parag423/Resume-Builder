@@ -1,0 +1,39 @@
+
+.dear{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: crimson;
+}
+
+
+
+.dear-msg{
+    margin: 1rem;
+    font-size: 1.2rem;
+    width: 60%;
+    color: rgb(145, 89, 89);
+}
+
+
+.modal_lim{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    background-color:rgba(221, 175, 8, 0.293) ;
+}
+
+.dear_btn{
+    background-color: crimson;
+    border-style: none;
+    font-size: 1.3rem;
+    padding: .2rem .8rem;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: .2rem .2rem .1rem;
+    transition: .5sec;
+    cursor: pointer;
+}
+
+.dear_btn:hover{
+    transform: scale(1.2);
+}

@@ -10,6 +10,7 @@ import {
 } from "react-feather";
 
 import styles from "./Resume.module.css";
+import "./ResumeSec.css";
 
 const Resume = forwardRef((props, ref) => {
   const information = props.information;
@@ -310,7 +311,7 @@ const Resume = forwardRef((props, ref) => {
           <p className={styles.heading}>{info.basicInfo?.detail?.name}</p>
           <p className={styles.subHeading}>{info.basicInfo?.detail?.title}</p>
 
-          <div className={styles.links}>
+          <div className="link">
             {info.basicInfo?.detail?.email ? (
               <a className={styles.link} type="email">
                 <AtSign /> {info.basicInfo?.detail?.email}

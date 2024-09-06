@@ -1,10 +1,18 @@
 import React from "react";
-
-import resumeSvg from "../../assets/resume.svg";
-
+import { useNavigate } from 'react-router-dom';
+import resumeSvg from "../../assets/vec.jpg";
+import { RiLogoutCircleRLine } from "react-icons/ri";
 import styles from "./Header.module.css";
 
 function Header() {
+  const navigate = useNavigate();
+  function exitHandeler(){
+    localStorage.removeItem('user');
+    console.log("Exit")
+    navigate('/');
+    window.location.reload(true); 
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.left}>
@@ -18,6 +26,7 @@ function Header() {
       <div className={styles.right}>
         <img src={resumeSvg} alt="Resume" />
       </div>
+      <RiLogoutCircleRLine onClick={()=>exitHandeler()} style={{ color: 'crimson', fontSize: '2rem', position:'absolute',top:'2rem',right:'2rem',cursor:'pointer' }} />
     </div>
   );
 }

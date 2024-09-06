@@ -26,13 +26,14 @@ function Editor(props) {
     github: activeInformation?.detail?.github || "",
     phone: activeInformation?.detail?.phone || "",
     email: activeInformation?.detail?.email || "",
+    location: activeInformation?.detail?.location || "",
   });
 
   const handlePointUpdate = (value, index) => {
     const tempValues = { ...values };
     if (!Array.isArray(tempValues.points)) tempValues.points = [];
     tempValues.points[index] = value;
-    setValues(tempValues);
+    setValues(tempValues);  
   };
 
   const workExpBody = (

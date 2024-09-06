@@ -37,8 +37,8 @@
 }
 
 .header .active {
-  border-bottom: 2px solid #239ce2;
-  color: #239ce2;
+  border-bottom: 2px solid crimson;
+  color: crimson;
 }
 
 .body {
@@ -105,14 +105,14 @@
 }
 
 .chips .active {
-  background-color: #239ce2;
+  background-color: crimson;
 }
 
 .body button {
   width: fit-content;
   padding: 8px 16px;
   border-radius: 5px;
-  background-color: #239ce2;
+  background-color: crimson;
   color: #fff;
   outline: none;
   border: none;
